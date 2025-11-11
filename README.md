@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+EduFyre - Project Documentation
+**URL**: edu-fyre.vercel.app
+🚀 Project Overview
+EduFyre is a modern, responsive educational platform built with React + TypeScript + Tailwind CSS + shadcn‑ui, set up using Vite. It aims to provide a clean, performant web experience for learners and educators alike by leveraging cutting‑edge web technologies.
+🎯 Key Features
+- Built with React + TypeScript for type safety and modular architecture.
+- Styled with Tailwind CSS and enhanced UI components from shadcn‑ui.
+- Powered by Vite for super‑fast builds and hot‑module reloading (HMR).
+- Fully configured with ESLint, Prettier and TSConfig for robust code quality and maintainability.
+- Structure designed for scalability: clear folder layout, environment separation, and modular components.
+🧱 Tech Stack
+- Vite – fast build tool and development server.
+- TypeScript – strongly‑typed JavaScript for improved reliability.
+- React – component‑based UI library for declarative user interfaces.
+- Tailwind CSS – utility‑first CSS framework for rapid UI development.
+- shadcn‑ui – customizable UI component library built for React + Tailwind.
+- ESLint + Prettier – static linting and formatting for code consistency.
+- TSConfig / Vite config – custom configuration for project tooling and TypeScript support.
+🧭 Getting Started
+### Prerequisites
+- Node.js (version 16+ recommended)
+- npm or yarn (npm used in instructions below)
+- Git (for version control)
 
-## Project info
-
-**URL**: https://lovable.dev/projects/b12d7df7-881e-4d7a-b2e6-7ac86ef257cf
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/b12d7df7-881e-4d7a-b2e6-7ac86ef257cf) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Installation
+```
+git clone https://github.com/raazaditya028/EduFyre.git
+cd EduFyre
+npm install
 ```
 
-**Edit a file directly in GitHub**
+### Development Server
+```
+npm run dev
+```
+Once started, open http://localhost:5173 in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
+```
+npm run build
+```
+Output is placed in the `dist/` folder.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b12d7df7-881e-4d7a-b2e6-7ac86ef257cf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Linting & Formatting
+```
+npm run lint
+npm run format
+```
+🗂️ Project Structure
+/public              # static assets (images, favicon, etc.)
+/src
+  /components        # reusable UI components
+  /pages             # top‑level pages / routes
+  /styles            # global styles, Tailwind configuration
+  /utils             # helper functions, hooks
+.eslint.config.js
+tsconfig.json
+tailwind.config.ts
+vite.config.ts
+package.json
+📦 Deployment
+Deploy the production build on any static hosting platform like Vercel, Netlify, or GitHub Pages using the output folder from `npm run build`.
+🤝 Contributing
+1. Fork the repo.
+2. Create a new branch: `git checkout -b feature/my-feature`
+3. Commit changes with a descriptive message.
+4. Push to your branch and open a Pull Request.
+5. Ensure linting and formatting pass before submitting.
+📝 License
+Specify your license here (e.g., MIT, Apache‑2.0) or link to a LICENSE file.
+📄 Acknowledgements
+- Thanks to the teams behind Vite, React, Tailwind CSS, shadcn‑ui for building excellent tools.
+- Inspired by modern frontend architecture and best practices in UI/UX.
