@@ -64,7 +64,7 @@ const Home = () => {
     {
       name: "Rahul Kumar",
       role: "Software Engineer at Google",
-      content: "EduLearn transformed my career. The courses are practical and the instructors are amazing!",
+      content: "EduFyre transformed my career. The courses are practical and the instructors are amazing!",
       rating: 5
     },
     {
@@ -117,9 +117,11 @@ const Home = () => {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-2xl border-2">
-                Join Now
-              </Button>
+              <Link to="/auth">
+                <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-2xl border-2">
+                  Join Now
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

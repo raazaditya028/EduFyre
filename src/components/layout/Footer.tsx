@@ -4,22 +4,20 @@ import { GraduationCap, Github, Twitter, Linkedin, Youtube } from "lucide-react"
 const Footer = () => {
   const footerLinks = {
     Product: [
+      { name: "Content", path: "/content" },
       { name: "Courses", path: "/courses" },
       { name: "Pricing", path: "/pricing" },
-      { name: "Features", path: "/features" },
-      { name: "Testimonials", path: "/testimonials" }
+      { name: "Features", path: "/features" }
     ],
     Company: [
       { name: "About", path: "/about" },
       { name: "Careers", path: "/careers" },
-      { name: "Blog", path: "/blog" },
-      { name: "Press", path: "/press" }
+      { name: "Help Center", path: "/help" }
     ],
     Resources: [
-      { name: "Help Center", path: "/help" },
-      { name: "Community", path: "/community" },
-      { name: "Documentation", path: "/docs" },
-      { name: "API", path: "/api" }
+      { name: "Online", path: "/resources/online" },
+      { name: "Offline", path: "/resources/offline" },
+      { name: "Hybrid", path: "/resources/hybrid" }
     ],
     Legal: [
       { name: "Privacy Policy", path: "/privacy" },
@@ -46,7 +44,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold">EduLearn</span>
+              <span className="text-xl font-bold">EduFyre</span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
               Empowering the next generation of developers through quality education.
@@ -91,7 +89,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} EduLearn. All rights reserved.
+            © {new Date().getFullYear()} EduFyre. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

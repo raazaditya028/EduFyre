@@ -18,6 +18,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Courses", path: "/courses" },
+    { name: "Content", path: "/content" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" }
   ];
@@ -31,7 +32,7 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
               <GraduationCap className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold">EduLearn</span>
+            <span className="text-2xl font-bold">EduFyre</span>
           </Link>
 
           {/* Desktop Navigation */}
