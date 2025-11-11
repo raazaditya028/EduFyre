@@ -70,10 +70,10 @@ const CourseCard = ({ course }: CourseCardProps) => {
           {/* Price */}
           <div className="pt-4 border-t flex items-center justify-between">
             <div className="text-2xl font-bold text-primary">
-              ${course.price}
+              ₹{course.price.toLocaleString('en-IN')}
             </div>
             <div className="text-sm text-muted-foreground line-through">
-              ${(course.price * 1.5).toFixed(2)}
+              ₹{Math.round(course.price * 1.5).toLocaleString('en-IN')}
             </div>
           </div>
         </div>

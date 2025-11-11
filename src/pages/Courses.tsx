@@ -20,7 +20,7 @@ const Courses = () => {
       thumbnail: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
       rating: 4.8,
       students: 12453,
-      price: 49.99,
+      price: 4999,
       category: "Web Development",
       level: "Intermediate",
       duration: "12 weeks"
@@ -32,7 +32,7 @@ const Courses = () => {
       thumbnail: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
       rating: 4.9,
       students: 8932,
-      price: 69.99,
+      price: 6999,
       category: "AI/ML",
       level: "Advanced",
       duration: "16 weeks"
@@ -44,7 +44,7 @@ const Courses = () => {
       thumbnail: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
       rating: 4.7,
       students: 10245,
-      price: 59.99,
+      price: 5999,
       category: "Cloud",
       level: "Intermediate",
       duration: "10 weeks"
@@ -56,7 +56,7 @@ const Courses = () => {
       thumbnail: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
       rating: 4.6,
       students: 7821,
-      price: 54.99,
+      price: 5499,
       category: "Mobile",
       level: "Intermediate",
       duration: "8 weeks"
@@ -68,7 +68,7 @@ const Courses = () => {
       thumbnail: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9",
       rating: 4.8,
       students: 9156,
-      price: 64.99,
+      price: 6499,
       category: "DevOps",
       level: "Advanced",
       duration: "14 weeks"
@@ -80,7 +80,7 @@ const Courses = () => {
       thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
       rating: 4.7,
       students: 11342,
-      price: 44.99,
+      price: 4499,
       category: "AI/ML",
       level: "Beginner",
       duration: "10 weeks"

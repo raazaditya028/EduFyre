@@ -18,14 +18,13 @@ const CourseDetails = () => {
     thumbnail: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     rating: 4.8,
     students: 12453,
-    price: 49.99,
+    price: 4999,
     category: "Web Development",
     level: "Intermediate",
     duration: "12 weeks",
     instructor: {
-      name: "Dr. Sarah Anderson",
-      bio: "Senior Software Engineer at Meta with 10+ years of experience. Passionate about teaching and helping students launch their tech careers.",
-      avatar: "https://i.pravatar.cc/150?img=5"
+      name: "Amit Kumar",
+      bio: "Senior Software Engineer at Flipkart with 10+ years of experience. Passionate about teaching and helping students launch their tech careers."
     },
     syllabus: [
       {
@@ -114,16 +113,9 @@ const CourseDetails = () => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-4 pt-4">
-                <img 
-                  src={course.instructor.avatar} 
-                  alt={course.instructor.name}
-                  className="w-12 h-12 rounded-full"
-                />
-                <div>
-                  <div className="font-semibold">Instructor</div>
-                  <div className="text-muted-foreground">{course.instructor.name}</div>
-                </div>
+              <div className="pt-4">
+                <div className="font-semibold">Instructor</div>
+                <div className="text-muted-foreground">{course.instructor.name}</div>
               </div>
             </div>
             
@@ -144,7 +136,7 @@ const CourseDetails = () => {
                 </div>
                 
                 <div className="text-4xl font-bold mb-6">
-                  ${course.price}
+                  ₹{course.price.toLocaleString('en-IN')}
                   <span className="text-lg font-normal text-muted-foreground ml-2">one-time</span>
                 </div>
                 
@@ -225,23 +217,16 @@ const CourseDetails = () => {
             
             <TabsContent value="instructor">
               <div className="glass p-8 rounded-3xl">
-                <div className="flex items-start gap-6 mb-6">
-                  <img 
-                    src={course.instructor.avatar} 
-                    alt={course.instructor.name}
-                    className="w-24 h-24 rounded-2xl"
-                  />
-                  <div>
-                    <h2 className="text-3xl font-bold mb-2">{course.instructor.name}</h2>
-                    <div className="flex items-center gap-4 text-muted-foreground">
-                      <div className="flex items-center gap-1">
-                        <Star className="w-4 h-4 text-accent fill-accent" />
-                        <span>4.9 Instructor Rating</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Users className="w-4 h-4" />
-                        <span>25,000+ Students</span>
-                      </div>
+                <div className="mb-6">
+                  <h2 className="text-3xl font-bold mb-2">{course.instructor.name}</h2>
+                  <div className="flex items-center gap-4 text-muted-foreground">
+                    <div className="flex items-center gap-1">
+                      <Star className="w-4 h-4 text-accent fill-accent" />
+                      <span>4.9 Instructor Rating</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      <span>25,000+ Students</span>
                     </div>
                   </div>
                 </div>

@@ -14,7 +14,7 @@ const Home = () => {
       thumbnail: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
       rating: 4.8,
       students: 12453,
-      price: 49.99,
+      price: 4999,
       category: "Web Development",
       level: "Intermediate"
     },
@@ -25,7 +25,7 @@ const Home = () => {
       thumbnail: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
       rating: 4.9,
       students: 8932,
-      price: 69.99,
+      price: 6999,
       category: "AI/ML",
       level: "Advanced"
     },
@@ -36,7 +36,7 @@ const Home = () => {
       thumbnail: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
       rating: 4.7,
       students: 10245,
-      price: 59.99,
+      price: 5999,
       category: "Cloud",
       level: "Intermediate"
     }
@@ -62,25 +62,22 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Rahul Kumar",
       role: "Software Engineer at Google",
       content: "EduLearn transformed my career. The courses are practical and the instructors are amazing!",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/150?img=1"
+      rating: 5
     },
     {
-      name: "Michael Chen",
+      name: "Anjali kumari",
       role: "Full Stack Developer",
       content: "Best investment I've made in my education. Got a job within 3 months of completing the bootcamp.",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/150?img=2"
+      rating: 5
     },
     {
-      name: "Emily Rodriguez",
+      name: "Rohit Mehra",
       role: "ML Engineer at Amazon",
       content: "The AI course gave me the skills I needed to transition into machine learning. Highly recommended!",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/150?img=3"
+      rating: 5
     }
   ];
 
@@ -196,8 +193,7 @@ const Home = () => {
                 </div>
                 <p className="text-lg mb-6 italic">"{testimonial.content}"</p>
                 <div className="flex items-center gap-4">
-                  <img 
-                    src={testimonial.avatar} 
+                  <img  
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full"
                   />
